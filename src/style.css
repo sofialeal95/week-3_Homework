@@ -1,0 +1,143 @@
+:root {
+  --main-color: #6c5b7c;
+  --secondary-color: #c06c84;
+  --highlight-color: #f67280;
+  --mute-color: #f8b595;
+}
+
+.container {
+  margin: 0px auto;
+  max-width: 100%;
+  padding: 0;
+}
+
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin: 0;
+  max-width: 100%;
+}
+
+nav.navbar {
+  background-color: var(--main-color);
+}
+
+a.nav-link {
+  color: white;
+}
+
+a.nav-link.active {
+  color: var(--mute-color) !important;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 55px;
+  line-height: 1;
+  margin-bottom: 0;
+}
+
+h2 {
+  line-height: 1;
+  margin-top: 0;
+}
+
+a {
+  color: var(--main-color);
+  opacity: 1;
+  text-decoration: none;
+}
+
+i {
+  color: #fff;
+  font-size: 50px;
+}
+
+.logo {
+  max-width: 35px;
+}
+
+.inner-content {
+  margin: 0 10px;
+}
+
+.grand-highlight {
+  color: var(--mute-color);
+  font-size: 70px;
+}
+
+.content {
+  max-width: 1320px;
+}
+
+.column-layout {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 50px 50px 20px;
+}
+
+.column {
+  background-color: var(--main-color);
+  border-radius: 5px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 100;
+  margin: 0 10px;
+  padding: 20px;
+}
+.center-column {
+  background-color: var(--main-color);
+  border-radius: 5px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 100;
+  margin: 0 60px;
+  padding: 20px;
+}
+
+.contact-info-container {
+  padding: 5px;
+}
+
+.contact-info {
+  background-color: var(--mute-color);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px auto;
+  text-align: center;
+}
+
+.icon {
+  margin-top: 20px;
+}
+
+.contact-info-container :hover {
+  color: #fff;
+  background-color: var(--main-color);
+}
+
+@media (max-width: 576px) {
+  .img-space {
+    display: none;
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  .content a {
+    display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  .contact-info-container {
+    padding: 10px 100px;
+  }
+}
